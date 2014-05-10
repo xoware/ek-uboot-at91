@@ -1,4 +1,4 @@
-./cross-make.sh xoware_exokey_config
+./cross-make.sh exokey_nandflash_config
 ./cross-make.sh all
 
 

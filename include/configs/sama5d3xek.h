@@ -165,23 +165,23 @@
 #endif
 
 /* Ethernet Hardware */
-#define CONFIG_MACB
-#define CONFIG_RMII
-#define CONFIG_GMACB
-#define CONFIG_RGMII
-#define CONFIG_NET_MULTI
-#define CONFIG_NET_RETRY_COUNT		50
-#define CONFIG_RESET_PHY_R
-#define CONFIG_MACB_SEARCH_PHY
+// #define CONFIG_MACB
+// #define CONFIG_RMII
+// #define CONFIG_GMACB
+// #define CONFIG_RGMII
+// #define CONFIG_NET_MULTI
+// #define CONFIG_NET_RETRY_COUNT		50
+// #define CONFIG_RESET_PHY_R
+// #define CONFIG_MACB_SEARCH_PHY
 
 /* MMC */
-#define CONFIG_CMD_MMC
+// #define CONFIG_CMD_MMC
 
 #ifdef CONFIG_CMD_MMC
-#define CONFIG_MMC
-#define CONFIG_GENERIC_MMC
-#define CONFIG_GENERIC_ATMEL_MCI
-#define ATMEL_BASE_MMCI			ATMEL_BASE_MCI0
+ #define CONFIG_MMC
+ #define CONFIG_GENERIC_MMC
+ #define CONFIG_GENERIC_ATMEL_MCI
+ #define ATMEL_BASE_MMCI			ATMEL_BASE_MCI0
 #endif
 
 /* USB */
