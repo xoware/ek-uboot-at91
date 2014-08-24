@@ -32,6 +32,17 @@
 
 #define CONFIG_CMD_BOOTZ
 #define CONFIG_OF_LIBFDT		/* Device Tree support */
+#define CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG
+#define CONFIG_FIT
+#define CONFIG_FIT_VERBOSE  /* remove after debug done */
+#define CONFIG_NETCONSOLE
+
+#define CONFIG_DEFAULT_DEVICE_TREE    "exokey-device-tree"
+#define CONFIG_ARCH_DEVICE_TREE
+#define CONFIG_OF_CONTROL
+#define CONFIG_OF_SEPARATE
+#define CONFIG_FIT_SIGNATURE
+#define CONFIG_RSA
 
 #define CONFIG_SYS_GENERIC_BOARD
 
@@ -95,7 +106,7 @@
 /* SDRAM */
 #define CONFIG_NR_DRAM_BANKS		1
 #define CONFIG_SYS_SDRAM_BASE           ATMEL_BASE_DDRCS
-#define CONFIG_SYS_SDRAM_SIZE		0x20000000
+#define CONFIG_SYS_SDRAM_SIZE		0x10000000
 
 #ifdef CONFIG_SPL_BUILD
 #define CONFIG_SYS_INIT_SP_ADDR		0x310000
@@ -135,6 +146,7 @@
 #endif
 
 /* Ethernet Hardware */
+#if 0
 #define CONFIG_MACB
 #define CONFIG_RMII
 #define CONFIG_NET_RETRY_COUNT		20
@@ -146,7 +158,8 @@
 #define CONFIG_PHY_MICREL_KSZ9021
 
 /* MMC */
-#define CONFIG_CMD_MMC
+ #define CONFIG_CMD_MMC
+#endif
 
 #ifdef CONFIG_CMD_MMC
 #define CONFIG_MMC
@@ -176,7 +189,7 @@
 #define CONFIG_USB_GADGET_ATMEL_USBA
 #define CONFIG_USB_ETHER
 #define CONFIG_USB_ETH_RNDIS
-#define CONFIG_USBNET_MANUFACTURER      "Atmel SAMA5D3xEK"
+#define CONFIG_USBNET_MANUFACTURER      "x.o.ware ExoKey v1"
 
 #if defined(CONFIG_CMD_USB) || defined(CONFIG_CMD_MMC)
 #define CONFIG_CMD_FAT
