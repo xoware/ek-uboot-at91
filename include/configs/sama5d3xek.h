@@ -238,7 +238,7 @@
 	"console=ttyS0,115200 earlyprintk "				\
 	"mtdparts=atmel_nand:256k(bs),512k(ub),"		\
 	"256K(env),256k(evn_r),"			\
-	"512k(dtb),6M(kernel),-(rootfs) "				\
+	"512k(dtb),6M(ker),8M(cfg),-(store) "				\
 	"root=/dev/ram0 ubi.mtd=7"
 #endif
 
