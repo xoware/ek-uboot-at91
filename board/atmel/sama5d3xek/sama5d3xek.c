@@ -203,6 +203,9 @@ int board_init(void)
 	if (has_lcdc())
 		sama5d3xek_lcd_hw_init();
 #endif
+
+	at91_set_pio_pullup(AT91_PIO_PORTE, 27, 1); // factory reset pin pull-up
+
 	return 0;
 }
 
