@@ -66,6 +66,7 @@
 #define ATMEL_PMC_UHP			AT91SAM926x_PMC_UHP
 
 /* LCD */
+#if  0
 #define CONFIG_LCD
 #define LCD_BPP				LCD_COLOR16
 #define LCD_OUTPUT_BPP                  24
@@ -76,6 +77,7 @@
 #define CONFIG_ATMEL_HLCD
 #define CONFIG_ATMEL_LCD_RGB565
 #define CONFIG_SYS_CONSOLE_IS_IN_ENV
+#endif
 
 /* board specific (not enough SRAM) */
 #define CONFIG_SAMA5D3_LCD_BASE		0x23E00000
